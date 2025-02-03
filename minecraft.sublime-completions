@@ -1,0 +1,15 @@
+{
+    "scope": "source.mcfunction",
+    "completions": [
+        {"trigger": "tp", "contents": "tp @s ${1:x} ${2:y} ${3:z}"},
+        {"trigger": "give", "contents": "give @s minecraft:${1:item} ${2:1}"},
+        {"trigger": "summon", "contents": "summon minecraft:${1:entity} ${2:x} ${3:y} ${4:z}"},
+        {"trigger": "effect", "contents": "effect give @s minecraft:${1:effect} ${2:30} ${3:1}"},
+        {"trigger": "kill", "contents": "kill @e[type=${1:entity}]"},
+        {"trigger": "title", "contents": "title @a title {\"text\":\"${1:message}\",\"color\":\"${2:red}\"}"},
+        {"trigger": "playsound", "contents": "playsound minecraft:${1:sound} master @a ${2:x} ${3:y} ${4:z} ${5:1.0} ${6:1.0} ${7:1.0}"},
+        {"trigger": "function", "contents": "function ${1:namespace}:${2:filename}"},
+        {"trigger": "scoreboard", "contents": "scoreboard objectives add ${1:name} ${2:criteria}"},
+        {"trigger": "execute", "contents": "execute as @s at @s run ${1:command}"}
+    ]
+}
